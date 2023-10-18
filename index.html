@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urna Eletronica</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <button type="button" onclick="urnaEletronica('Joao' , 'Carlos')"> iniciar </button>
-    <script src="./UrnaEletronica.js"></script>
+    <div class="urna">
+        <div class="tela">
+            <div class="d-1">
+                <div class="d-1-left">
+                    <!-- Conteúdo da seção esquerda -->
+                </div>
+                <div class="d-1-right">
+                    <!-- Conteúdo da seção direita -->
+                </div>
+            </div>
+            <div class="d-2">
+                Aperte a tela:<br/>
+                CONFIRMA para CONFIRMAR este voto<br/>
+                CORRIGE para REINICIAR este voto
+            </div>
+        </div>
+    </div>
+    <div class="teclado">
+        <div class="tecladolinha">
+            <div class="tecladobotao" onclick="teclaPressionada('1')">1</div>
+            <div class="tecladobotao" onclick="teclaPressionada('2')">2</div>
+            <div class="tecladobotao" onclick="teclaPressionada('3')">3</div>
+        </div>
+        <div class="tecladolinha">
+            <div class="tecladobotao" onclick="teclaPressionada('4')">4</div>
+            <div class="tecladobotao" onclick="teclaPressionada('5')">5</div>
+            <div class="tecladobotao" onclick="teclaPressionada('6')">6</div>
+        </div>
+        <div class="tecladolinha">
+            <div class="tecladobotao" onclick="teclaPressionada('7')">7</div>
+            <div class="tecladobotao" onclick="teclaPressionada('8')">8</div>
+            <div class="tecladobotao" onclick="teclaPressionada('9')">9</div>
+        </div>
+        <div class="tecladolinha">
+            <div class="tecladobotao" onclick="teclaPressionada('0')">0</div>
+        </div>
+        <div class="tecladolinha">
+            <div class="tecladobotao botaobranco" onclick="votoBranco()">BRANCO</div>
+            <div class="tecladobotao botaocorrige" onclick="corrigeVoto()">CORRIGE</div>
+            <div class="tecladobotao botaoconfirma" onclick="confirmaVoto()">CONFIRMA</div>
+        </div>
+    </div>
+
+    <script>
+    </script>
 </body>
 </html>
