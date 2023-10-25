@@ -21,6 +21,7 @@ function urnaEletronica() {
 
     let senhaMesario;
     let encerrarVotação;
+    let nomeCandidatos;
 
     console.log('Início do programa');
 
@@ -32,21 +33,52 @@ function urnaEletronica() {
             senhaMesario = prompt('Deseja REALMENTE usar esta senha para o controle do mesario? Digite [S] para Sim ou [N] para Não').charAt(0).toUpperCase();
 
             if (senhaMesario === 'S') {
-            alert('A senha foi adicionada');
+                alert('A senha foi adicionada');
             } else if (senhaMesario === 'N') {
-            alert('Defina uma senha para o mesario');
+                alert('Defina uma senha para o mesario');
             }
 
         } while (senhaMesario !== 'S')
 
-        nomeCandidato1 = prompt('Digite o nome do candidato 1:');
-            nomeCandidato1 = confirm('Deseja REALMENTE usar este nome na votação? Precione [Ok] para Sim ou [Cancelar] para Não')
+        do {
 
+        nomeCandidato1 = prompt('Digite o nome do candidato 1:');
+        outraVariavel = confirm('Deseja REALMENTE usar este nome na votação? Precione [Ok] para Sim ou [Cancelar] para Não');
+            
+
+            if (nomeCandidatos) {
+                alert('O nome foi adicionada!'); 
+            } else {
+                alert('Re-escreva o nome');
+            }
+
+        } while (!nomeCandidatos);
+
+        do {
+            
         nomeCandidato2 = prompt('Digite o nome do candidato 2:');
             nomeCandidato2 = comfirm('Deseja REALMENTE usar este nome na votação? Precione [Ok] para Sim ou [Cancelar] para Não')
 
+            if (nomeCandidatos) {
+                alert('O nome foi adicionada!'); 
+            } else {
+                alert('Re-escreva o nome');
+            }
+
+        } while (!nomeCandidatos);
+
+        do {
+
         nomeCandidato3 = prompt('Digite o nome do candidato 3:');
             nomeCandidato3 = confirm('Deseja REALMENTE usar este nome na votação? Precione [Ok] para Sim ou [Cancelar] para Não')
+
+            if (nomeCandidatos) {
+                alert('O nome foi adicionada!'); 
+            } else {
+                alert('Re-escreva o nome');
+            }
+
+        } while (!nomeCandidatos)
 
     // laço de votação
     do {
