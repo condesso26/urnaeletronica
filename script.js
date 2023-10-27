@@ -1,3 +1,8 @@
+function dataHoraAtual (){
+    const dataHora = new Date();
+    dataHora.getDate;
+}
+
 function urnaEletronica() { 
 
     confirm('Você deseja iniciar o processo de votação?')
